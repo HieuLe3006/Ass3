@@ -1,0 +1,8 @@
+This is an incomplete checklist.
+- For streams you need to ensure multiple files are correctly set up
+1. Ensure that gem5-config/mnist_stream.py includes appropriate accelerators and the hex addresses are set up
+2. Ensure that sufficient stream buffers are declared and wired up 
+3. Ensure hw/source/hw_defines.h memory map matches the config files
+4. Ensure hw/source/top.c writes to appropriate locations to set up DMA or arguments
+5. Modify hw/source/makefile to include appropriate accelerators.
+
